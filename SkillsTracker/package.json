@@ -1,0 +1,14 @@
+{
+  "name": "SkillsTracker",
+  "version": "0.0.0",
+  "description": "SkillsTracker",
+  "main": "server.js",
+  "author": {
+    "name": "sjakisa",
+    "email": ""
+  },
+  "dependencies": {
+    "mongoose": "^3.8.24",
+    "restify": "^3.0.0"
+  }
+}
