@@ -6,8 +6,10 @@ var RouteHandler       = require('react-router').RouteHandler;
 
 var CurrentUserActions = require('./actions/CurrentUserActions');
 var SearchActions = require('./actions/SearchActions');
+var RollupActions = require('./actions/RollupActions');
 var CurrentUserStore   = require('./stores/CurrentUserStore');
 var SearchStore = require('./stores/SearchStore');
+var RollupStore = require('./stores/RollupStore');
 var Header             = require('./components/Header');
 var Footer             = require('./components/Footer');
 
@@ -36,7 +38,7 @@ var App = React.createClass({
   componentDidMount: function() {
       console.log('App did mount');
     CurrentUserActions.checkLoginStatus(this._onUserChange);
-    this.listenTo(CurrentUserStore, this._onUserChange);
+    //this.listenTo(CurrentUserStore, this._onUserChange);
   },
 
   render: function() {
