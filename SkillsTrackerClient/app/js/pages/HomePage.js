@@ -22,7 +22,7 @@ var HomePage = React.createClass({
           </div>
         
             <RollUp topic="technology"></RollUp>
-        <RollUp topic="projects"></RollUp>
+
         <POTD></POTD>
 
           <div>
