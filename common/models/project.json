@@ -1,0 +1,42 @@
+{
+  "name": "project",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "endDate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "technologies": {
+      "type": "hasMany",
+      "model": "technology",
+      "foreignKey": ""
+    },
+    "clients": {
+      "type": "hasOne",
+      "model": "client",
+      "foreignKey": ""
+    },
+    "people": {
+      "type": "hasMany",
+      "model": "person",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

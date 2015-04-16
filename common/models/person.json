@@ -1,0 +1,51 @@
+{
+  "name": "person",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "manager": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "pictureUrl": {
+      "type": "string"
+    },
+    "office": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "technologies": {
+      "type": "hasMany",
+      "model": "technology",
+      "foreignKey": ""
+    },
+    "projects": {
+      "type": "hasAndBelongsToMany",
+      "model": "project",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

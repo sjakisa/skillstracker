@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "ds060977.mongolab.com",
+    "port": 60977,
+    "url": "",
+    "database": "skillstracker",
+    "password": "admin",
+    "name": "db",
+    "connector": "mongodb",
+    "user": "admin"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "client",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "website": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "projects": {
+      "type": "hasMany",
+      "model": "project",
+      "foreignKey": ""
+    },
+    "technologies": {
+      "type": "hasMany",
+      "model": "technology",
+      "foreignKey": "",
+      "through": "project"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
